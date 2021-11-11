@@ -1,0 +1,146 @@
+@keyframes slideFromRight1 {
+  0% {
+    transform: translateX(500%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes slideFromRight2 {
+  0% {
+    transform: translateX(375%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes slideFromRight3 {
+  0% {
+    transform: translateX(250%); }
+  100% {
+    transform: translateX(0%); } }
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+  background-color: #d7da90; }
+
+header {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0px; }
+  header nav {
+    grid-column: 1 / -1;
+    border: none;
+    border-bottom: 1px solid #2b4317;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px; }
+    header nav h1 {
+      font-size: 6rem;
+      padding: 7px 0px 0px 15px;
+      color: #2b4317;
+      font-family: "Zen Kurenaido", sans-serif; }
+  header .divider {
+    grid-column: 6 / -1; }
+
+.about {
+  padding: 50px 30px;
+  grid-column: 1 / -6;
+  font-size: 3rem; }
+
+.social-btn {
+  background: #c04944;
+  color: white;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  position: relative; }
+  .social-btn:hover {
+    background: #c04944;
+    color: white; }
+    .social-btn:hover:before {
+      width: 100%;
+      transition: 800ms ease all; }
+    .social-btn:hover:after {
+      width: 100%;
+      transition: 800ms ease all; }
+  .social-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background: #6f6ff7;
+    transition: 400ms ease all; }
+  .social-btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background: #6f6ff7;
+    transition: 400ms ease all;
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0; }
+
+.social-btn {
+  width: 125px;
+  height: 40px;
+  font-size: 1.5rem;
+  margin: 0 10px; }
+
+.social-title {
+  font-size: 2.5rem;
+  color: #5a5d1f;
+  text-align: center;
+  height: 50px; }
+  .social-title-buymeacoffee {
+    font-size: 2rem; }
+
+.social-links {
+  margin: 50px;
+  grid-auto-rows: min-content;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; }
+  .social-links-item {
+    grid-auto-rows: min-content;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+    border: 2px solid #5a5d1f;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px; }
+    .social-links-item-column-1 {
+      animation: 1.5s ease-in-out 0s 1 slideFromRight1; }
+    .social-links-item-column-2 {
+      animation: 1.5s ease-in-out 0s 1 slideFromRight2; }
+    .social-links-item-column-3 {
+      animation: 1.5s ease-in-out 0s 1 slideFromRight3; }
+    .social-links-item .icon {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto; }
+  .social-links-link {
+    text-decoration: none;
+    color: #d7da90;
+    height: 5px; }

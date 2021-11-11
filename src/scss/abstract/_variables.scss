@@ -1,21 +1,34 @@
-$color-primary-light: #c4e2aa;
-$color-primary: #7dc044;
-$color-primary-dark: #2b4317;
+$color-primary-light: #d7da90;
+$color-primary: #bbc044;
+$color-primary-dark: #5a5d1f;
 
-$color-secondary-light: #c09dde;
-$color-secondary: #8744c0;
-$color-secondary-dark: #381b50;
+$color-secondary-light: #c4e2aa;
+$color-secondary: #7dc044;
+$color-secondary-dark: #2b4317;
 
-$color-tertiary-light: #d7da90;
-$color-tertiary: #bbc044;
-$color-tertiary-dark: #5a5d1f;
+$color-tertiary-light: #c09dde;
+$color-tertiary: #8744c0;
+$color-tertiary-dark: #381b50;
+
+$color-quarternary-light: #dea09d;
+$color-quarternary: #c04944;
+$color-quarternary-dark: #83302c;
+
+$color-quinary-light: #fff999;
+$color-quinary: #cc0;
+$color-quinary-dark: #666000;
 
 $color-background: white;
+$color-background-radiant: linear-gradient(
+  to bottom right,
+  $color-secondary,
+  $color-secondary-light
+);
 
 $font-primary: "Oswald", sans-serif;
 $font-header: "Zen Kurenaido", sans-serif;
 $font-color-primary: black;
 $font-color-secondary: #c04944;
 
-$icon-color-primary: $color-tertiary;
+$icon-color-primary: $color-secondary;
 $icon-color-secondary: #44c087;

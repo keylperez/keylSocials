@@ -9,10 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="src/js/script.js"></script>
 </head>
 <body>
     <header>
+        <nav>
+            <h1>Keyl's Cobweb</h1>
+        </nav>
+        <div class="about">
+            <h2>What is this?</h2>
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+
+            <!-- Load the Twitch embed script -->
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+            <script type="text/javascript">
+            new Twitch.Player("twitch-embed", {
+                width: 1024,
+                height: 576,
+                muted: false,
+                channel: "keyl_perez"
+            });
+            </script>
+        </div>
+        <div class="divider">
+            <div class="social-links">
+
+        </div>
+        </div>
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="yuutaro" data-description="Support me on Buy me a coffee!" data-message="" data-color="#bbc044" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
     </header>
+    <footer>
+    </footer>
 </body>
 </html>

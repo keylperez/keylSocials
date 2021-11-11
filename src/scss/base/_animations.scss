@@ -1,0 +1,26 @@
+@keyframes slideFromRight1 {
+  0% {
+    transform: translateX(500%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromRight2 {
+  0% {
+    transform: translateX(375%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromRight3 {
+  0% {
+    transform: translateX(250%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

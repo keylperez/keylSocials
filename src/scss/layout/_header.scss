@@ -1,0 +1,20 @@
+header {
+  @include grid(8);
+
+  nav {
+    grid-column: 1 / -1;
+    border: none;
+    border-bottom: 1px solid $color-secondary-dark;
+    @include grid(3);
+
+    h1 {
+      font-size: 6rem;
+      padding: 7px 0px 0px 15px;
+      color: $color-secondary-dark;
+      font-family: $font-header;
+    }
+  }
+  .divider {
+    grid-column: 6 / -1;
+  }
+}

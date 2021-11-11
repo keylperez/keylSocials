@@ -1,0 +1,23 @@
+{
+  "name": "keyls-cobweb",
+  "version": "1.0.0",
+  "description": "website with my social linkds",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass src/scss/main.scss src/css/style.css",
+    "watch:scss": "node-sass src/scss/main.scss src/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keylperez/keylSocials.git"
+  },
+  "author": "keylperez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keylperez/keylSocials/issues"
+  },
+  "homepage": "https://github.com/keylperez/keylSocials#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
